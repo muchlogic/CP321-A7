@@ -21,6 +21,7 @@ data["Winners"] = data["Winners"].replace({"West Germany": "Germany"})
 data["Winners"] = data["Winners"].replace({"England": "United Kingdom"})
 
 app = Dash()
+server = app.server
 
 marks = {v: str(v) for v in data["Year"]} # marks for the year slider
 
